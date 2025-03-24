@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import React from "react";
 import { Timeline } from "@/components/ui/timeline";
 import { motion } from "motion/react";
 export const Route = createFileRoute("/challenges")({
