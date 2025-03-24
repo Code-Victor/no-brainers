@@ -3,7 +3,7 @@ import * as React from "react";
 import { cn } from "@/lib/utils";
 import { Boxes, HeartHandshake, Rocket, TriangleAlert } from "lucide-react";
 import Unemployment from "@/assets/images/unemployment.png";
-import Mission from "@/assets/images/mission.png";
+import Mission from "@/assets/images/missions.png";
 import Value from "@/assets/images/value.png";
 
 const tabs = [
