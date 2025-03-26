@@ -1,58 +1,61 @@
 import { Shield, RecoveryConvert, Award, LampCharge } from "iconsax-react";
+import Armand from "@/assets/images/armand-1.png";
+import Leila from "@/assets/images/leila-1.png";
+import Nada from "@/assets/images/nada-1.png";
+import Prince from "@/assets/images/prince-1.png";
+import Victor from "@/assets/images/victor-2.png";
+import Gisa from "@/assets/images/gisa-1.png";
+// Armand Mugisha
+// Umutoni Nada
+// Prince Shema
+// Imanzi Leilla
+// Victor Hamzat
+// Gisa Kabahizi Anthony
+
 export const teamMembers = [
   {
-    name: "David Rodriguez",
+    name: "Armand Mugisha",
     position: "Program Manager",
-    image: "/placeholder.svg?height=400&width=400",
-    email: "david@example.com",
-    linkedin: "https://linkedin.com/in/davidrodriguez",
-    instagram: "https://instagram.com/davidrodriguez",
+    image: Armand,
+    email: "a.mugisha2@alustudent.com",
+    instagram: "https://www.instagram.com/dal_armand",
   },
   {
-    name: "Priya Patel",
-    position: "Employment Specialist",
-    image: "/placeholder.svg?height=400&width=400",
-    email: "priya@example.com",
-    linkedin: "https://linkedin.com/in/priyapatel",
+    name: "Imanzi Leilla",
+    position: "Secretary",
+    image: Leila,
+    email: "i.leilla@alustudent.com",
+    instagram: "https://www.instagram.com/leilla",
+    linkedin: "https://www.linkedin.com/in/imanzi-leilla-7650762a1/",
   },
   {
-    name: "James Wilson",
-    position: "Outreach Coordinator",
-    image: "/placeholder.svg?height=400&width=400",
-    email: "james@example.com",
+    name: "Hamzat Victor",
+    position: "Team Lead",
+    image: Victor,
+    email: "v.hamzat@alustudent.com",
+    linkedin: "https://www.linkedin.com/in/code-victor",
+    instagram: "https://www.instagram.com/hamzatoluwabori",
   },
   {
-    name: "Sophia Kim",
+    name: "Prince Shema",
     position: "Marketing Specialist",
-    image: "/placeholder.svg?height=400&width=400",
-    email: "sophia@example.com",
-    linkedin: "https://linkedin.com/in/sophiakim",
+    image: Prince,
+    email: "p.shema@alustudent.com",
+    instagram: "https://www.instagram.com/prince_al_walid",
   },
   {
-    name: "Marcus Johnson",
+    name: "Nada Umutoni",
     position: "Data Analyst",
-    image: "/placeholder.svg?height=400&width=400",
-    email: "marcus@example.com",
+    image: Nada,
+    email: "u.nada@alustudent.com",
+    instagram: "https://www.instagram.com/mlynad3",
   },
   {
-    name: "Elena Gonzalez",
-    position: "Program Coordinator",
-    image: "/placeholder.svg?height=400&width=400",
-    email: "elena@example.com",
-    linkedin: "https://linkedin.com/in/elenagonzalez",
-  },
-  {
-    name: "Thomas Lee",
-    position: "Finance Manager",
-    image: "/placeholder.svg?height=400&width=400",
-    email: "thomas@example.com",
-  },
-  {
-    name: "Zara Ahmed",
-    position: "Community Liaison",
-    image: "/placeholder.svg?height=400&width=400",
-    email: "zara@example.com",
-    linkedin: "https://linkedin.com/in/zaraahmed",
+    name: "Gisa K. Anthony",
+    position: "Training co-ordinator",
+    image: Gisa,
+    email: "g.kabahizi@alustudent.com",
+    instagram: "https://www.instagram.com/gisa__.k",
   },
 ];
 

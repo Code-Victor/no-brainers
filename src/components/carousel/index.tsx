@@ -98,17 +98,14 @@ const TeamCarousel = () => {
                 <motion.div
                   key={index}
                   variants={itemVariants}
-                  whileHover={{ y: -5, transition: { duration: 0.3 } }}
+                  whileHover={{ y: -6, transition: { duration: 0.3 } }}
                   className="team-card group relative"
                 >
                   <div className="absolute -inset-0.5 bg-gradient-to-br from-primary to-secondary rounded-xl opacity-0 group-hover:opacity-20 transition-opacity duration-300 blur-sm"></div>
                   <div className="relative bg-card rounded-lg overflow-hidden border border-border/50 shadow-sm">
                     <div className="aspect-square relative overflow-hidden">
                       <img
-                        src={
-                          member.image ||
-                          "/placeholder.svg?height=400&width=400"
-                        }
+                        src={member.image}
                         alt={member.name}
                         className="object-cover transition-transform duration-500 group-hover:scale-105"
                       />
@@ -119,7 +116,10 @@ const TeamCarousel = () => {
                               href={member.instagram}
                               className="bg-background/80 p-1.5 rounded-full hover:bg-primary hover:text-white transition-colors duration-200"
                             >
-                              <Instagram className="h-4 w-4" />
+                              <Instagram
+                                color="currentColor"
+                                className="h-4 w-4"
+                              />
                             </a>
                           )}
                           {member.linkedin && (
