@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 import { ThemeSwitcher } from "../ui/theme-switcher";
+import { Link } from "@tanstack/react-router";
 
 export function Footer() {
   return (
@@ -14,21 +15,33 @@ export function Footer() {
             <Icons.logo className="icon-class w-6" />
           </div>
           <nav className="mb-8 flex flex-wrap justify-center gap-6">
-            <a href="#" className="hover:text-primary">
+            <Link
+              to="/"
+              activeProps={{
+                className: "font-bold text-primary",
+              }}
+              className="hover:text-primary"
+            >
               Home
-            </a>
-            <a href="#" className="hover:text-primary">
-              About
-            </a>
-            <a href="#" className="hover:text-primary">
-              Services
-            </a>
-            <a href="#" className="hover:text-primary">
-              Products
-            </a>
-            <a href="#" className="hover:text-primary">
-              Contact
-            </a>
+            </Link>
+            <Link
+              to="/challenges"
+              activeProps={{
+                className: "font-bold text-primary",
+              }}
+              className="hover:text-primary"
+            >
+              Challenges
+            </Link>
+            <Link
+              to="/gallery"
+              activeProps={{
+                className: "font-bold text-primary",
+              }}
+              className="hover:text-primary"
+            >
+              Gallery
+            </Link>
           </nav>
           <div className="mb-8 flex gap-6 items-center">
             <div className="flex gap-2">

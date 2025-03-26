@@ -2,8 +2,8 @@ import { AnimatePresence, motion } from "motion/react";
 import * as React from "react";
 import { cn } from "@/lib/utils";
 import { Boxes, HeartHandshake, Rocket, TriangleAlert } from "lucide-react";
-import Unemployment from "@/assets/images/unemployment.png";
-import Mission from "@/assets/images/missions.png";
+import Unemployment from "@/assets/images/unemployment.png?format=webp";
+import Mission from "@/assets/images/missions.png?format=webp";
 
 const tabs = [
   {
@@ -114,7 +114,7 @@ export function Evolution() {
     setActiveTab(id);
   };
   return (
-    <section className="font-geist py-8 md:py-16 px-4 max-w-full bg-gray-50 dark:bg-[#1f1f1f]">
+    <section className="font-geist py-8 md:py-16 px-4 max-w-full bg-zinc-50 dark:bg-[#1f1f1f]">
       <div className="container mx-auto">
         <div className="text-left space-y-4">
           <h2 className="text-lg uppercase font-medium text-[#0e44bc]">
@@ -127,7 +127,7 @@ export function Evolution() {
           {/* Tab Navigation */}
           <div className="flex flex-col gap-4">
             <div className="flex justify-center py-6">
-              <div className="bg-gray-200 dark:bg-gray-800 dark:shadow-lg rounded-full p-1.5 flex">
+              <div className="bg-zinc-200 dark:bg-zinc-800 dark:shadow-lg rounded-full p-1.5 flex">
                 {tabs.map((tab) => {
                   const isActive = activeTab === tab.id;
                   return (
@@ -137,14 +137,14 @@ export function Evolution() {
                       className={cn(
                         "relative px-2 md:px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 flex items-center gap-2",
                         isActive
-                          ? "text-gray-800 dark:text-gray-100"
-                          : "text-gray-600 dark:400 dark:hover:text-gray-300 hover:text-gray-700"
+                          ? "text-zinc-800 dark:text-zinc-100"
+                          : "text-zinc-600 dark:400 dark:hover:text-zinc-300 hover:text-zinc-700"
                       )}
                     >
                       {isActive && (
                         <motion.div
                           layoutId="active-tab-indicator"
-                          className="absolute inset-0 bg-gray-50 dark:bg-gray-700 rounded-full shadow-sm"
+                          className="absolute inset-0 bg-zinc-50 dark:bg-zinc-700 rounded-full shadow-sm"
                           transition={{
                             type: "spring",
                             bounce: 0.2,

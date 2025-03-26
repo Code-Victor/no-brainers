@@ -11,7 +11,6 @@ function RouteComponent() {
     <div className="overflow-x-hidden">
       <Hero />
       <Evolution />
-
       <Footer />
     </div>
   );

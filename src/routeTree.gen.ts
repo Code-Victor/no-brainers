@@ -11,10 +11,17 @@
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
+import { Route as GalleryImport } from './routes/gallery'
 import { Route as ChallengesImport } from './routes/challenges'
 import { Route as IndexImport } from './routes/index'
 
 // Create/Update Routes
+
+const GalleryRoute = GalleryImport.update({
+  id: '/gallery',
+  path: '/gallery',
+  getParentRoute: () => rootRoute,
+} as any)
 
 const ChallengesRoute = ChallengesImport.update({
   id: '/challenges',
@@ -46,6 +53,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ChallengesImport
       parentRoute: typeof rootRoute
     }
+    '/gallery': {
+      id: '/gallery'
+      path: '/gallery'
+      fullPath: '/gallery'
+      preLoaderRoute: typeof GalleryImport
+      parentRoute: typeof rootRoute
+    }
   }
 }
 
@@ -54,36 +68,41 @@ declare module '@tanstack/react-router' {
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/challenges': typeof ChallengesRoute
+  '/gallery': typeof GalleryRoute
 }
 
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/challenges': typeof ChallengesRoute
+  '/gallery': typeof GalleryRoute
 }
 
 export interface FileRoutesById {
   __root__: typeof rootRoute
   '/': typeof IndexRoute
   '/challenges': typeof ChallengesRoute
+  '/gallery': typeof GalleryRoute
 }
 
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/challenges'
+  fullPaths: '/' | '/challenges' | '/gallery'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/challenges'
-  id: '__root__' | '/' | '/challenges'
+  to: '/' | '/challenges' | '/gallery'
+  id: '__root__' | '/' | '/challenges' | '/gallery'
   fileRoutesById: FileRoutesById
 }
 
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ChallengesRoute: typeof ChallengesRoute
+  GalleryRoute: typeof GalleryRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ChallengesRoute: ChallengesRoute,
+  GalleryRoute: GalleryRoute,
 }
 
 export const routeTree = rootRoute
@@ -97,7 +116,8 @@ export const routeTree = rootRoute
       "filePath": "__root.tsx",
       "children": [
         "/",
-        "/challenges"
+        "/challenges",
+        "/gallery"
       ]
     },
     "/": {
@@ -105,6 +125,9 @@ export const routeTree = rootRoute
     },
     "/challenges": {
       "filePath": "challenges.tsx"
+    },
+    "/gallery": {
+      "filePath": "gallery.tsx"
     }
   }
 }

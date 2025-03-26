@@ -1,13 +1,13 @@
 import { useEffect } from "react";
 import { motion, stagger, useAnimate } from "motion/react";
-import Group1 from "@/assets/images/group-1.png";
-import Group2 from "@/assets/images/group-2.png";
-import Group3 from "@/assets/images/group-3.png";
-import Group4 from "@/assets/images/group-4.png";
-import Group5 from "@/assets/images/group-5.png";
-import Nada1 from "@/assets/images/nada-1.png";
-import Victor1 from "@/assets/images/victor-1.png";
-import Leila1 from "@/assets/images/leila-1.png";
+import Group1 from "@/assets/images/group-1.png?format=webp";
+import Group2 from "@/assets/images/group-2.png?format=webp";
+import Group3 from "@/assets/images/group-3.png?format=webp";
+import Group4 from "@/assets/images/group-4.png?format=webp";
+import Group5 from "@/assets/images/group-5.png?format=webp";
+import Nada1 from "@/assets/images/nada-1.png?format=webp";
+import Victor1 from "@/assets/images/victor-1.png?format=webp";
+import Leila1 from "@/assets/images/leila-1.png?format=webp";
 
 import Floating, {
   FloatingElement,
