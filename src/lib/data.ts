@@ -92,7 +92,7 @@ export const values = [
 export const gallery = [
   {
     image: HelpLap,
-    description: "Helping lives",
+    description: "Visit to Kunda for helping lives",
     size: {
       width: 1000,
       height: 1000,
@@ -100,7 +100,7 @@ export const gallery = [
   },
   {
     image: HelpLap2,
-    description: "Helping lives",
+    description: "Hangout after help lab",
     size: {
       width: 1080,
       height: 810,
@@ -108,7 +108,7 @@ export const gallery = [
   },
   {
     image: HelpLap3,
-    description: "Helping lives",
+    description: "Hangout with street kids🫂",
     size: {
       width: 1080,
       height: 810,
@@ -116,7 +116,7 @@ export const gallery = [
   },
   {
     image: DiscoverAfrica,
-    description: "Helping lives",
+    description: "Vist to the EcoPark🏞️",
     size: {
       width: 569,
       height: 696,
@@ -124,7 +124,7 @@ export const gallery = [
   },
   {
     image: Chilling,
-    description: "Helping lives",
+    description: "Eating Gelato at Kunda🍧",
     size: {
       width: 1280,
       height: 960,
@@ -132,7 +132,7 @@ export const gallery = [
   },
   {
     image: Nada2,
-    description: "Helping lives",
+    description: "Radiating Nada☀️",
     size: {
       width: 540,
       height: 960,
@@ -140,7 +140,7 @@ export const gallery = [
   },
   {
     image: Prince,
-    description: "Helping lives",
+    description: "Confident Prince😎",
     size: {
       width: 960,
       height: 960,
@@ -148,7 +148,7 @@ export const gallery = [
   },
   {
     image: Studying,
-    description: "Helping lives",
+    description: "Cracking on ELab🧠",
     size: {
       width: 1080,
       height: 810,
@@ -156,7 +156,7 @@ export const gallery = [
   },
   {
     image: Leila,
-    description: "Helping lives",
+    description: "Leila in the zone!🫰🏾",
     size: {
       width: 960,
       height: 1080,
@@ -164,7 +164,7 @@ export const gallery = [
   },
   {
     image: Victor2,
-    description: "Helping lives",
+    description: "Visionary Victor🔭",
     size: {
       width: 689,
       height: 1080,
@@ -172,7 +172,7 @@ export const gallery = [
   },
   {
     image: Gisa,
-    description: "Helping lives",
+    description: "Chill Gisa💪🏾",
     size: {
       width: 810,
       height: 810,
@@ -180,7 +180,7 @@ export const gallery = [
   },
   {
     image: Armand2,
-    description: "Helping lives",
+    description: "Armand with the Steeze✨",
     size: {
       width: 797,
       height: 1063,
