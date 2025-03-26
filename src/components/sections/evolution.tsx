@@ -4,7 +4,6 @@ import { cn } from "@/lib/utils";
 import { Boxes, HeartHandshake, Rocket, TriangleAlert } from "lucide-react";
 import Unemployment from "@/assets/images/unemployment.png";
 import Mission from "@/assets/images/missions.png";
-import Value from "@/assets/images/value.png";
 
 const tabs = [
   {
@@ -73,27 +72,17 @@ const tabs = [
     icon: HeartHandshake,
     color: "#92b5fc",
     content: (
-      <div className="w-full h-full grid md:grid-cols-5 gap-4 md:items-center">
-        <div className="w-full h-full object-cover rounded-xl overflow-hidden col-span-2">
-          <img
-            src={Value}
-            alt="Value"
-            height={1004}
-            width={670}
-            className="w-full h-full object-cover rounded-xl"
-          />
-        </div>
-        <div className="flex flex-col gap-4 col-span-3">
-          <h3 className="font-bold text-2xl md:text-4xl">Our Values</h3>
-          <p className="text-sm md:text-base">
-            The values that drive us are{" "}
-            <span className="font-semibold">consistency</span>,{" "}
-            <span className="font-semibold">integrity</span>,{" "}
-            <span className="font-semibold">creativity</span>, and{" "}
-            <span className="font-semibold">impact driven</span>. the reason
-            being is that we want to change employment rate in the community.
+      <div className="w-full h-full space-y-4">
+        <div className="text-center space-y-2">
+          <h3 className="font-bold text-2xl md:text-4xl text-center">
+            Our Values
+          </h3>
+          <p className="max-w-2xl mx-auto text-sm md:text-base">
+            The principles that drive our mission to transform employment
+            opportunities and create lasting impact in our community.
           </p>
         </div>
+        <ValuesCarousel />
       </div>
     ),
   },
@@ -103,9 +92,17 @@ const tabs = [
     icon: Boxes,
     color: "#ffb577",
     content: (
-      <div className="w-full h-full">
-        <h3 className="font-bold text-2xl md:text-4xl text-center">The Team</h3>
-        <CarouselPlugin />
+      <div className="w-full h-full space-y-4">
+        <div className="text-center space-y-2">
+          <h3 className="font-bold text-2xl md:text-4xl text-center">
+            Our Team
+          </h3>
+          <p className="max-w-2xl mx-auto text-sm md:text-base">
+            Passionate professionals dedicated to creating positive change and
+            driving employment opportunities in our community.
+          </p>
+        </div>
+        <TeamCarousel />
       </div>
     ),
   },
@@ -230,6 +227,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { TeamCarousel, ValuesCarousel } from "../carousel";
 
 export function CarouselPlugin() {
   const plugin = React.useRef(
